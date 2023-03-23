@@ -84,6 +84,7 @@ export default {
                     text: 'รายการขอบเขตงาน',
                     sortable: true,
                     value: 'works',
+                    width:'30%',
                 }, {
                     text: 'วันที่สร้าง/แก้ไข',
                     sortable: true,

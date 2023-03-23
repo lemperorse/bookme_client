@@ -1,0 +1,46 @@
+{
+  "name": "bookme-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@types/lodash": "^4.14.184",
+    "apexcharts": "^3.35.5",
+    "core-js": "^3.19.3",
+    "fs": "0.0.1-security",
+    "gh-pages": "^4.0.0",
+    "json2xls": "^0.1.2",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.37",
+    "nuxt": "^2.15.8",
+    "nuxt-property-decorator": "^2.9.1",
+    "otplib": "^12.0.1",
+    "sweetalert2": "^11.4.29",
+    "v-blur": "^1.0.4",
+    "v-tooltip": "^2.1.3",
+    "v-viewer": "^1.6.4",
+    "vue": "^2.6.14",
+    "vue-apexcharts": "^1.6.2",
+    "vue-json-excel": "^0.3.0",
+    "vue-notification": "^1.3.20",
+    "vue-server-renderer": "^2.6.14",
+    "vue-table-to-excel": "^1.0.6",
+    "vue-template-compiler": "^2.6.14",
+    "vue-thailand-address": "^3.4.1",
+    "vuetify": "^2.6.1",
+    "vuex-class-modules": "^1.3.0",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/vuetify": "^1.12.3"
+  }
+}

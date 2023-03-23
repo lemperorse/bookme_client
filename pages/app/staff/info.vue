@@ -57,7 +57,7 @@
         <v-btn @click="openResetDialog(item)" class="mr-2" dense color="info"
           >รีเซ็ตรหัสผ่าน</v-btn
         >
-        <v-btn class="mr-2" dense color="error" @click="deleteData(item.id)"
+        <v-btn class="mr-2" dense color="error" @click="remove(item.id)"
           >ลบ</v-btn
         >
       </template>

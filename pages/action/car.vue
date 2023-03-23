@@ -4,7 +4,7 @@
         <h2 class="font-semibold text-2xl">{{title}}</h2>
         <v-spacer></v-spacer>
         <v-btn @click="dialog=true" depressed small color="success" dark>
-            <v-icon size="18">mdi-plus</v-icon> เพิ่มรถ
+            <v-icon size="18">mdi-plus</v-icon> เพิ่มข้อมูลรถ
         </v-btn>
     </v-toolbar>
     <v-text-field class="mt-4" dense outlined v-model="search" label="ค้นหา"></v-text-field>
@@ -30,14 +30,14 @@
     <v-dialog v-model="dialog" persistent max-width="500px">
         <v-card>
             <v-card-title primary-title>
-                {{ (form.id)?'แก้ไข':'เพิ่ม' }} ข้อมูล <v-spacer></v-spacer>
+                {{ (form.id)?'แก้ไข':'เพิ่ม' }} ข้อมูลรถ <v-spacer></v-spacer>
                 <v-btn icon @click="run()">
                     <v-icon>mdi-close</v-icon>
                 </v-btn>
             </v-card-title>
             <v-card-text>
                 <v-form ref="iform">
-                    <v-text-field outlined dense label="ชื่อ" :rules="[$v.req,]" v-model="form.name"></v-text-field>
+                    <v-text-field outlined dense label="ชื่อรถ" :rules="[$v.req,]" v-model="form.name"></v-text-field>
                 </v-form>
             </v-card-text>
             <v-card-actions>
@@ -55,7 +55,7 @@
 export default {
     data: () => {
         return ({
-            title: 'จัดการรถ',
+            title: 'ข้อมูลรถ',
             items: [],
             search: '',
             headers: [{
@@ -63,7 +63,7 @@ export default {
                     value: 'no'
                 },
                 {
-                    text: 'ชื่อ',
+                    text: 'ข้อมูลรถ',
                     value: 'name'
                 },
                 {

@@ -12,7 +12,7 @@
              <v-card-text>
                  <div class="mt-2">
                      <v-form ref="form">
-                         <v-text-field outlined dense type="text" label="ชื่อ" v-model="form.name" :rules="[]"></v-text-field>
+                         <v-text-field outlined dense type="text" label="ชื่ออุปกรณ์" v-model="form.name" :rules="[]"></v-text-field>
                          <div class="flex">
                              <v-spacer></v-spacer>
                              <v-btn @click="(form.id)?update():store()" :color="(form.id)?'warning':'success'">บันทึกข้อมูล</v-btn>
@@ -25,7 +25,7 @@
      </v-dialog>
 
      <v-toolbar color="transparent" flat>
-         <h2 class="font-semibold text-2xl">การจัดการข้อมูล</h2>
+         <h2 class="font-semibold text-2xl">ข้อมูลอุปกรณ์</h2>
          <v-spacer></v-spacer>
          <v-btn @click="dialog=true" depressed small color="success" dark>
              <v-icon>mdi-plus</v-icon> เพิ่มข้อมูล
@@ -77,7 +77,7 @@ export default {
                     value: 'no',
                 },
                 {
-                    text: 'ชื่อ',
+                    text: 'ชื่ออุปกรณ์',
                     sortable: true,
                     value: 'name',
                 }, {

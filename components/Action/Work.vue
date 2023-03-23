@@ -12,7 +12,7 @@
              <v-card-text>
                  <div class="mt-2">
                      <v-form ref="form">
-                         <v-text-field outlined dense type="text" label="ชื่อ" v-model="form.name" :rules="[]"></v-text-field> 
+                         <v-text-field outlined dense type="text" label="ชื่อรายการขอบเขตบริการ" v-model="form.name" :rules="[]"></v-text-field> 
 
                          <div class="flex">
                              <v-spacer></v-spacer>
@@ -78,7 +78,7 @@ export default {
                     value: 'no',
                 },
                 {
-                    text: 'ชื่อ',
+                    text: 'ชื่อรายการขอบเขตบริการ',
                     sortable: true,
                     value: 'name',
                 }, {

@@ -4,7 +4,7 @@
     <v-dialog v-model="dialog" scrollable persistent max-width="500px" transition="dialog-transition">
         <v-card>
             <v-card-title primary-title>
-                จัดการข้อมูล <v-spacer></v-spacer>
+                ข้อมูลธนาคาร <v-spacer></v-spacer>
                 <v-btn text @click="run()" color="error">
                     <v-icon>mdi-close</v-icon>
                 </v-btn>
@@ -29,7 +29,7 @@
     </v-dialog>
 
     <v-toolbar color="transparent" flat>
-        <h2 class="font-semibold text-2xl">การจัดการข้อมูล</h2>
+        <h2 class="font-semibold text-2xl">ข้อมูลธนาคาร</h2>
         <v-spacer></v-spacer>
         <v-btn @click="dialog=true" depressed small color="success" dark>
             <v-icon>mdi-plus</v-icon> เพิ่มข้อมูล
@@ -90,7 +90,7 @@ export default {
                     value: 'no',
                 },
                 {
-                    text: 'ชื่อบัญชีธนาคาร',
+                    text: 'ชื่อธนาคาร',
                     sortable: true,
                     value: 'bank_name',
                 }, {

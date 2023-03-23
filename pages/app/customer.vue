@@ -4,7 +4,7 @@
     <v-dialog v-model="dialog" scrollable persistent max-width="500px" transition="dialog-transition">
         <v-card>
             <v-card-title primary-title>
-                จัดการข้อมูล <v-spacer></v-spacer>
+                จัดการฃข้อมูล <v-spacer></v-spacer>
                 <v-btn text @click="run()" color="error">
                     <v-icon>mdi-close</v-icon>
                 </v-btn>

@@ -35,6 +35,8 @@ Vue.prototype.$re = async (path)=> {
    // await router.push(path)
    return $nuxt.$route.name
 }
+import VueClipboard from 'vue-clipboard2'
+Vue.use(VueClipboard)
 
 Vue.prototype.$v ={
     req: (v) => !!v || 'This field is required',

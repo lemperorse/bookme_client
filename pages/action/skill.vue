@@ -25,7 +25,7 @@
      </v-dialog>
 
      <v-toolbar color="transparent" flat>
-         <h2 class="font-semibold text-2xl">การจัดการข้อมูล</h2>
+         <h2 class="font-semibold text-2xl">ข้อมูลความสามารถพนักงาน</h2>
          <v-spacer></v-spacer>
          <v-btn @click="dialog=true" depressed small color="success" dark>
              <v-icon>mdi-plus</v-icon> เพิ่มข้อมูล
@@ -77,7 +77,7 @@ export default {
                     value: 'no',
                 },
                 {
-                    text: 'ชื่อ',
+                    text: 'ความสามารถ',
                     sortable: true,
                     value: 'name',
                 }, {
